@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BBC.com</title>
+    <style>
+        .margin{
+            margin: 20px;
+        }
+        .border{
+            float: left;
+            font-size: 15px;
+            text-align: center;
+            border-left:1px gray solid;
+            padding: 10px;
+            overflow: hidden;
+        }
+        .main-header{
+            background-color: black;
+            color: white;
+            font-size: 23px;
+            font-family: Ebrima;
+            border-left:5px black solid;
+            border-right:5px black solid;
+        }
+
+        .search-bar{
+            border-left:1px #bbbbbb solid;
+            position: relative;
+            width: 200px;
+            text-align: center;
+        }
+        .red-border{
+            background-color: #E31717;
+            height: 50px;
+            color:whitesmoke;
+        }
+        .darkred-border{
+            background-color:#C50C0C ;
+            height: 50px;
+            color:whitesmoke;
+            font-size: 20px;
+            align-items: center;
+        }
+        .button1{padding: 10px 20px;background-color: white;border: none;font-size: 15px;}
+        .button2{padding: 7px 20px;background-color: white;border: none;font-size: 15px;}
+        .button3{padding: 3px 20px;background-color:#C50C0C ;border: none;font-size: 15px;color: white;float: left}
+        .moredwn {
+            float: left;
+            overflow: hidden;
+        }
+
+        .moredwn .morebtn{
+            outline: none;
+            margin: 0;
+        }
+        .more-content{
+            display: none;
+            position: absolute;
+            background-color: whitesmoke;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2) ;
+        }
+        .more-content a{
+            float: none;
+            padding: 12px 66px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .more-content a:hover{
+            background-color: #bbbbbb;
+        }
+        .moredwn:hover .more-content{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <p class="margin">
+            <span  class="border"><b>
+                <span class="main-header">B</span>
+                <span class="main-header">B</span>
+                <span class="main-header">C</span></b>
+            </span>
+
+            <span class="border"><button class="button1" onclick="window.location.href='https://www.bbc.com/news'" >News</button> </span>
+            <span class="border"><button class="button1" onclick="window.location.href='https://www.bbc.com/sport'" >Sport</button></span>
+            <span class="border"><button class="button1" onclick="window.location.href='https://www.bbc.com/search?q=weather'" > Weather</button></span>
+            <span class="border"><button class="button1" onclick="window.location.href='https://www.bbc.com/search?q=iplayer'"> iPlayer</button></span>
+            <span class="border"><button class="button1" onclick="window.location.href='https://www.bbc.com/search?q=TV'"> TV</button></span>
+
+            <div class="moredwn border">
+                <button class="morebtn button1">More
+                </button>
+                <div class="more-content">
+                    <a href="#">link1</a>
+                    <a href="#">link2</a>
+                    <a href="#">link3</a>
+                </div>
+            </div>
+        <span class="border" style="float: right"><button class="button2" onclick="window.location.href='https://account.bbc.com/auth?realm=%2F&clientId=Account&ptrt=https%3A%2F%2Fwww.bbc.com%2Fsearch%3Fq%3Dlocal%2520news&userOrigin=BBCS_BBC&isCasso=false&action=sign-in&redirectUri=https%3A%2F%2Fsession.bbc.com%2Fsession%2Fcallback%3Frealm%3D%2F&service=IdSignInService&nonce=8oLy9YsJ-CJt8vSYlAsaFDJMvFqTDJrIjsR4'">
+            Sign in
+        </button> </span>
+        <span class="border" style="float: right"><button class="button2" onclick="window.location.href='https://account.bbc.com/register?realm=%2F&clientId=Account&action=register&ptrt=https%3A%2F%2Fwww.bbc.com%2Fsearch%3Fq%3Dlocal%2520news&userOrigin=BBCS_BBC&isCasso=false&redirectUri=https%3A%2F%2Fsession.bbc.com%2Fsession%2Fcallback%3Frealm%3D%2F&service=IdRegisterService&nonce=5jMxd8qs-H0obz6EpDHsETgU6GgSz8_xPGNA'">
+            Register
+        </button> </span>
+    </p>
+    <p class="margin search-bar" ><input id="search001" placeholder="Search" ><button type="submit"><img src="pngwing.com.png" alt="search" width="10px" height="10px"></button> </p>
+    <div class="red-border" style="text-align: left">
+        <p style="font-size: 40px;">
+            NEWS
+            <input id="search002" placeholder="Find local news" style="font-size: 30px;float: right;background-color:#E31717;color: whitesmoke;width: 250px">
+        </p>
+    </div>
+    <div class="darkred-border">
+        <button class="button3" onclick="window.location.href='https://www.bbc.com/news'">Home</button>
+        <button class="button3" onclick="window.location.href='https://www.bbc.com/news/uk'">UK</button>
+        <button class="button3"onclick="window.location.href='https://www.bbc.com/news/world'">World</button>
+        <button class="button3" onclick="window.location.href='https://www.bbc.com/business'">Business</button>
+        <button class="button3" onclick="window.location.href='https://www.bbc.com/search?q=politics'">Politics</button>
+        <button class="button3" onclick="window.location.href='https://www.bbc.com/search?q=tech'">Tech</button>
+        <button class="button3" onclick="window.location.href='https://www.bbc.com/search?q=science'">Science</button>
+        <button class="button3" onclick="window.location.href='https://www.bbc.com/search?q=health'">Health</button>
+        <button class="button3" onclick="window.location.href='https://www.bbc.com/search?q=education'">Education</button>
+        <button class="button3" onclick="window.location.href='https://www.bbc.com/search?q=Entertainment%20&%20Art'">Entertainment & Art</button>
+        <button class="button3" onclick="window.location.href='https://www.bbc.com/search?q=Video%20&%20Audio'">Video & Audio</button>
+        <div class="moredwn"> <button class="button3 morebtn" onclick="window.location.href=''">More</button>
+        <div class="more-content">
+        <a href="#">link1</a>
+        <a href="#">link2</a>
+        <a href="#">link3</a>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
